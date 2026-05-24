@@ -1,0 +1,42 @@
+# ── Virtual environment ───────────────────────────────
+.venv/
+venv/
+env/
+
+# ── PyInstaller ───────────────────────────────────────
+build/
+dist/
+*.spec.bak
+__pycache__/
+*.py[cod]
+
+# ── AppImage build artifacts ──────────────────────────
+packaging/appimage/AppDir/
+packaging/appimage/appimagetool-x86_64.AppImage
+*.AppImage
+
+# ── Debian package build artifacts ───────────────────
+packaging/deb/clipboard-manager_*/
+*.deb
+
+# ── SQLite database ───────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+
+# ── OS files ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ──────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Logs & temp ───────────────────────────────────────
+*.log
+*.tmp
+run.sh

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "clipboard-manager-linux"
+version = "1.0.0"
+description = "Windows+V style clipboard history manager for Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["clipboard", "linux", "pyqt6", "utility"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: X11 Applications :: Qt",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "PyQt6>=6.4.0",
+    "pynput>=1.7.6",
+]
+
+[project.scripts]
+clipboard-manager = "clipboard_manager.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["clipboard_manager*"]
